@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>Movie Finder</title>
+    <style>
+      body {
+        overflow: hidden;
+      }
+      /* Hide scrollbars (Webkit-based browsers) */
+      ::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+  </head>
+  <body style="background-color: rgb(227, 235, 242);">
+    <div class="fullbody">
+      <nav class="navbar navbar-light bg-dark">
+        <div class="container-fluid container">
+          <a class="navbar-brand text-light" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-btn-fill" viewBox="0 0 16 16">
+              <path d="M0 12V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm6.79-6.907A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+            </svg>                
+            Movie Finder
+          </a>
+        </div>
+      </nav>
+      <div class="input-group my-3 p-3 search container">
+        <input type="text" class="form-control form-input" id="search_input" placeholder="Movie Name" aria-label="Movie-Name" >
+        <button class="btn btn-outline-secondary  search" type="button" id="button-addon2">Search</button>
+      </div>
+     
+    </div>
+    
+    <div class="row row-cols-3 row-cols-md-4 g-4 " id="movie-cards">
+      <b class="d-inline text-center" style="position:absolute; left:50%; right:50%; transform:translate(-50% ,-50%)"> Search For Movies </b>
+    </div>
+  </body>
+
+  <script src="./MovieFinder.js"></script>
+</html>
